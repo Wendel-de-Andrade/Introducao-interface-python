@@ -29,10 +29,12 @@ from gui.windows.main_window.ui_main_window import *
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.setWindowTitle("Software BRABO do Wendel")
         
         #Setup Main Window
         self.ui = UI_MainWindow()
-        self.ui.setuo_ui(self)
+        self.ui.setup_ui(self)
         
         #Exibe a Aplicação
         self.show()
